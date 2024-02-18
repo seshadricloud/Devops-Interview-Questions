@@ -17,8 +17,8 @@ General
 what type of technologies you are using and what type of automation tool you are
 using?
 15) Tell me about yourself?
-16)Tell me your day to day activities?
-17)Tell me a few AWS services and tell me one point about the service?
+16) Tell me your day to day activities?
+17) Tell me a few AWS services and tell me one point about the service?
 18) Tell me the services which you are using?
 19) How do you secure your AWS Cloud
 20) What are the Security Tools available in the Market?
@@ -67,11 +67,11 @@ access the application, can you access it only inside? What do you do?
 How can you resolve it?
 8) How do you keep a secure instance in aws ??
 9) How do you make a connection between EC2 and S3??
-10)Difference between region and availability zone?
+10) Difference between region and availability zone?
 11) How to find how long the server is running?
 12) what is Assume role and what is the use of Assume role
 13) use of profile instance?
-14)How ec2 instance communicate with s3 bucket
+14) How ec2 instance communicate with s3 bucket
 15) Tell me the purchase plans of an ec2?
 16) Tell me a spot and reserved instance?
 17) What is an instance profile?
@@ -115,11 +115,11 @@ you did
 43) What is the region?
 44) What is the availability zone?
 45) what is the difference between Linux and ubuntu
-46)write a shell script for knowing how many ports are listening or not?
-47)What is the apache module?
-48)How are you using the Nginx server?
-49)What storage services have you worked on?
-50)What about EBS and EFS?
+46) write a shell script for knowing how many ports are listening or not?
+47) What is the apache module?
+48) How are you using the Nginx server?
+49) What storage services have you worked on?
+50) What about EBS and EFS?
 51) What are the different types of instance types in ec2?
 52) How do you take auto backup of an application data which is running on ec2?
 53) What are the HTTP port number and HTTPS port number?
@@ -144,14 +144,14 @@ environment? So which one is preferred and how prefered?
 8) What is vpc peering and what are vpc endpoints?
 9) What are the components in vpc?
 10) What is nat-gw in vpc?
-11)Vpc peering
+11) Vpc peering
 12) How do you check logs in vpc?
-13)Public subnet and private subnet
-14)What is NAT gateway ??
+13) Public subnet and private subnet
+14) What is NAT gateway ??
 15) What is Nat-GW?
 16) What is VPC Peering?
-17)Why natgw and IGw are used.
-18)How to convert public subnet to private subnet
+17) Why natgw and IGw are used.
+18) How to convert public subnet to private subnet
 19) How will you identify which is private subnet and public subnet
 20) What is a private link?
 21) HPA vs VPC
@@ -202,7 +202,7 @@ balancer and with that some instances are also attached to it.
 9) D/f b/w alb and nlb?
 10) difference between TCP and UDP?
 11) What are the types of load balancers?
-12)ALB vs NLB
+12) ALB vs NLB
 
 
 
@@ -259,7 +259,7 @@ happen?
 8) How many s3 buckets can we create in 1 Region?
 9) s3 lifecycle
 10) In s3 some life cycle rules,tell me what is all about?
-11)I want to restrict one user to one particular bucket,how you will do?
+11) I want to restrict one user to one particular bucket,how you will do?
 12) bucket storagetype
 13) s3 lifecycle policy
 14) how to upload a big data like 1 TB to S3.(multi part uploading)
@@ -292,17 +292,17 @@ another word using sed command.
 15) Difference between grep and egrep?
 16) How to check what process is running?
 17) Difference between ping and telnet?
-18)How do you check memory usage in linux ?
+18) How do you check memory usage in linux ?
 19) basic linux command
 20) linux basic commands
-21)lsblk
-22)mount a vol to instance via commands?
-23)What is the purpose of mount command?
-24)How can I check memory by using which command?
-25)I have a file, where it is we don't know how you can identify it?
-26)just your are searching www.google.com, in the backend what its going on?
-27)How much of a rating is given in Linux?
-28)What is the swipe space command?
+21) lsblk
+22) mount a vol to instance via commands?
+23) What is the purpose of mount command?
+24) How can I check memory by using which command?
+25) I have a file, where it is we don't know how you can identify it?
+26) just your are searching www.google.com, in the backend what its going on?
+27) How much of a rating is given in Linux?
+28) What is the swipe space command?
 29) Can you tell me the SMTP port number?
 30) Can you please tell me if the particular port number is running or not?
 31) Have you used the SED command?
@@ -313,7 +313,7 @@ another word using sed command.
 36) What is commendable if we want to copy all data from 1 bucket to another
 bucket?
 37) enter df -h command and print specific data in that which command is used?
-38)Root volume is full how will you troubleshoot it
+38) Root volume is full how will you troubleshoot it
 39) How to recover corrupted root vol data?
 
 
@@ -328,19 +328,19 @@ TERRAFORM
 7) State file in terraform
 8) How is IaC implemented using AWS
 9) I have a tfstate file? How to backup a tfstate file?
-10)Two users run the command terraform apply? Which user resource is created
+10) Two users run the command terraform apply? Which user resource is created
 first?
-11)I created resources using terraform? in my local remove statefile and again i give
+11) I created resources using terraform? in my local remove statefile and again i give
 terraform plan, and apply? What happened?
 12) What is terraform import?
-13)What does terraform refresh do?
+13) What does terraform refresh do?
 14) terraform validate command purpose?
 15) Can we have the 5 s3 bucket within the single code?
 16) I want to make the 100 ec2 with the same configuration ? what tools u will use?
 and how?
 17) terraform modules? Have you worked on that?
-18)Provisioners in terraform
-19)What are Workspaces in Terraform
+18) Provisioners in terraform
+19) What are Workspaces in Terraform
 20) terraform functions? working scenario of terraform with cicd for dockerfile
 implementation, how we can have a build up image and its storage, meanwhile
 tell us about the tools used for this, which cicd u used and how ? if i have further
@@ -364,11 +364,11 @@ go terraform?
 33) terraform init
 34) In terraform i want to spin up one ec2 instance there will be a 4 lines code which
 we will write,what parameters we need to pass can you tell me the lines?
-35)Tell me a few commands of terraform ?
+35) Tell me a few commands of terraform ?
 36) stages in terraform
 37) What does the terraform init ?
 38) Did you write terraform code?
-39)Which info is available in the tf state file?
+39) Which info is available in the tf state file?
 40) What happens if we delete the tf state file and then again I applied a terraform
 plan and applied what happened?
 41) What is a module in terraform?
@@ -376,7 +376,7 @@ plan and applied what happened?
 43) what are the different stages of terraform?(pending/ create /update /destroy)
 44) terraform init ?
 45) where you can store the tf state file?
-46)What is terraform init?
+46) What is terraform init?
 47) Terraform module..
 48) Terraform block.
 49) Null resource in terraform.
@@ -412,9 +412,9 @@ GIT
 7) What is git merge?
 8) What is git rebase?
 9) What is git cherry pick?
-10)What is git fetch and git pull?
+10) What is git fetch and git pull?
 11) how can we revert the deleted branch in git?
-12)What are Gitops Practices?
+12) What are Gitops Practices?
 13) What is the use of git cherry pick?
 14) Why do we use git stash?
 15) What is git rebase?
@@ -423,8 +423,8 @@ GIT
 18) git cherry-pick
 19) Gitops strategy
 20) about github?
-21)What are the commands used for github to create a registry?
-22)What is git rebase, git fetch and git full?
+21) What are the commands used for github to create a registry?
+22) What is git rebase, git fetch and git full?
 23) Merge conflict
 24) branching strategies
 25) Do you have git experience?
@@ -461,17 +461,17 @@ JENKINS
 
 9) write the jenkins pipeline?
 
-10)How do u configure master slave configuration?
+10) How do u configure master slave configuration?
 
-11)Plug-ins used in Jenkins?
+11) Plug-ins used in Jenkins?
 
-12)How to take backup of Jenkins machine?
+12) How to take backup of Jenkins machine?
 
-13)Explain the CICD process?
+13) Explain the CICD process?
 
-14)how do you call the variables in pipeline?
+14) how do you call the variables in pipeline?
 
-15)how do you pass the secret in jenkins pipeline?
+15) how do you pass the secret in jenkins pipeline?
 
 16) PING threat in jenkins?
 17) How to transfer the console log for a particular jenkins build?
@@ -494,15 +494,15 @@ JENKINS
 34) Do you work in a prod Environment?
 35) In your Organization how to deploy applications? any automation (or) manual?
 36) explain your environment cicd flow
-37)why we are using jenkins and explain jenkins pipeline
-38)If we have two environments, suppose 1.test 2.prod how you are maintaining
+37) why we are using jenkins and explain jenkins pipeline
+38) If we have two environments, suppose 1.test 2.prod how you are maintaining
 these two environments in the same aws account or another aws account and
 why ?
 39) What is the difference between continuous delivery and deployment?
 40) cicd ?
 41) What is the Jenkins pipeline?
 42) Tell me how you create a Jenkins job and explain step by step?
-43)How do you check code quality?
+43) How do you check code quality?
 44) Different between scripted pipeline and declarative pipeline?
 45) explain your environment cicd flow
 46) What type of pipeline is used in your environment?
@@ -519,15 +519,15 @@ why ?
 57) what happen if we delete that password file
 58) Plugins used in Jenkins.
 59) How are you using sonarqube?
-60)Can you explain the cicd pipeline?
-61)What kind of pipeline are you following?
+60) Can you explain the cicd pipeline?
+61) What kind of pipeline are you following?
 62) What is the difference between a declarative pipeline and a scripted pipeline?
 63) What is a multibranch pipeline?
 64) How do you manage the pipeline?
 65) Write a declarative pipeline with 5 stages?
-66)What is elastic trans coders??
-67)How do you manage secrets in jenkins ??
-68)explain about jenkins and pipline's
+66) What is elastic trans coders??
+67) How do you manage secrets in jenkins ??
+68) explain about jenkins and pipline's
 
 Maven
 =========
@@ -565,7 +565,7 @@ the storage?
 26) How to decrease Docker Image file size?
 27) Difference between cmd and entrypoint
 28) In your project how you will use docker and k8s,tell me the process?
-29)What is docker and what is the use of docker?
+29) What is docker and what is the use of docker?
 30) How will you scan docker images?
 31) Are you following any standards and guidelines to create dockerfile?
 32) How many dockerfiles have you written?
@@ -582,7 +582,7 @@ docker-compose?
 42) What is d/f b/w cmd and entrypoint?
 43) What is on build instruction in dockerfile?
 44) diff between docker and docker-compose,docker hub
-45)Difference between Copy and Add in Docker file
+45) Difference between Copy and Add in Docker file
 
 
 ECS
@@ -592,116 +592,325 @@ ECS
 
 KUBERNETES
 ====================
-1) one container goes down, what's your immediate reaction ?
-2) diff between pod and node ?
-3) What is the purpose of the ingress controller ?
-4) diff between taint & toleration
-5) how to create a user in a service ?
-6) Difference between deployment and STS?
-7) what is ingress controller
-8) have you work on production support
-9) trouble in production environment you did
-10)what is taint and toloration
-11)what is the requirement that you need that the pod should be deploy on particular
-node only
-12)tell me about image pull back error or crash loop back
-13)have you call secret
-14)have you work on volume in kubernetes
-15)you have java base application and you made change in config map what would i
-need to do that my deployment get that change
-16)what is roll out deployment
-17)you did rollout restart but your pod is not coming up what will you do ? they have
-crash loop back error
-18)what is the requirement to connect to cluster
-19)what does the kubeconfig file contain
-20) Difference between deployment and replica set in kubernetes?
-21) what is deomenset?
-22) what is difference between nodeport and clusterip?
-23) why using service in kubernetes?
-24) I want to go particular pod is particular node what you do?
-25)Kubernetes architecture
-26) what is service account?
-27) can you tell deployment syntax?Are you taking service type loadbalancer and
-what the happening behind it?
-28)Diff between job and pod?
-29) what is the diff between external ip and load balancer ip in k8s?
-30) Are you taking service type loadbalancer what the behind happening? Diff
-between configmap and secret?
-31) what was role lode balancer in kubernetes?
-32) why do we use name space?
-33) how do we run pods in particular node?
-34) what is troubleshooting you do if pods get down?
-35) what are the types of network services available in kubernetes?
-36) I have a pods in kubernetes how to give s3 access in perticular pods?
-37) difference between daemon set and statesful set
-38) when we are going to use of daemon set and statesful set ?
-39) I edited the config map /service account while running can it will effect the
-application ?
-40) how to attach the pod to s3 bucket?
-41) how to make the best way of securing the pod in the network part?
-42) have you setup any kubernetes cluster
-43) how you are deploying on k8s
-44)i wanted to run a application so as a devops guy what you do tell me from
-scratch.
-45) k8s architecture?
-46) In Kubernetes what is the use load balancers?
-47) Diff b/w deployment and service?
-48) I have a many micro services in kubernetes how to configure the database?
-49) what is ingress in kubernetes?
-50) what are the types of load balancers?
-51) How to access the s3 bucket from the Pod
-52) Difference between Kubelet and kube proxy?
-53) Explain the kubernetes architecture?
-54) Write the deployment.yaml file?
-55) what is ingress network?
-56) architecture of k8s
-57) Recent ticket that you have solved in k8s
-58) PV and PVC
-59) Types of PV-----dynamic and static
-60) How do you create Config-Map and whole integration of jenkins and k8s.
-61) Diff between job and pod?
-62) when the developer send the code how will you deploy into the K8S tell me the
-process?
-63) where we store secrets in k8s?
-64) why does a pod goes to pending state?
-65) request and limits
-66) where can we store secrets in k8s?(config map)
-67) what is the role of scheduler?
-68) What are the components of k8s?
-69) 80 pods are running in cluster, how can u make sure they don't even connect to
-each other?(namespace)
-70) a pod which ran into somewhere else, when you describe that it says
-node-affinity error, how to fix that issue?(annotation and labels).
-71) What are all the errors you have faced in k8s?(image pull/ crash pull/ssl error/api
-version/resources error/ network error/ latency)
-72) when does a pod goes to pending state?(lack of resources/ network/ image
-pullback)
-73) what ingress controller you are using either nlb or alb?
-74) What is nginx ingress controller?
-75) how will you check the secret in the namespace?
-76) default name spaces.
-77) Does nginx ingress controller support tcp?
-78) What type of application you have worked on in Kubernetes?
-79)What purpose are you using Cron job?
-80)what are the service types in Kubernetes?
-81) Do you know what is the difference between blue-green deployment and rolling
-update?
-82) Why do you use load balancer service type?
-83) what type of strategy follows in Kubernetes?
-84) what is pod description?
-85) what do taint and toleration?
-86) Do you work on helm charts?
-87) Are you following any standards and guidelines to create yaml files?
-88) Which volumes are you using for k8S,aws or other?
-89) Where do you store yaml files?
-90) How do you validate deployment?
-91) How do you login to eks cluster?
-92) What is kubernetes and why it is ?
-93) What are stateful set in K8S?
-94) What is RBAC in K8S?
-95) What Is TLS Bootstrapping in K8S?
-96) I want to deploy an app with internet at initial stage,how to come with request as
-a lead cloud engineer
+One container goes down, what's your immediate reaction?
+
+Check container logs.
+Examine system and application metrics.
+Restart the container if it's a transient issue.
+Diff between pod and node?
+
+A Node is a physical or virtual machine in a cluster.
+A Pod is the smallest deployable unit in Kubernetes, representing one or more containers.
+What is the purpose of the Ingress Controller?
+
+Manages external access to services.
+Routes external HTTP/S traffic to services based on Ingress resource rules.
+Diff between taint & toleration?
+
+Taint: Property preventing pod scheduling on nodes.
+Toleration: Pod specification allowing it to be scheduled on nodes with matching taints.
+How to create a user in a service?
+
+Depends on the service. Generally involves using registration forms, command-line tools, or IAM for cloud services.
+Difference between Deployment and STS?
+
+Deployment: For stateless applications.
+StatefulSet: For stateful applications with ordered deployment and unique hostnames.
+What is an Ingress Controller?
+
+Manages external access to services in Kubernetes.
+Acts as a reverse proxy for routing external HTTP/S traffic to services.
+Have you worked on production support?
+
+Share experiences supporting applications in a production environment, resolving issues, and ensuring system reliability.
+Trouble in production environment you did?
+
+Provide an example of a production issue you resolved, demonstrating your troubleshooting skills.
+What is taint and toleration?
+
+Taint: Property preventing pod scheduling on nodes.
+Toleration: Pod specification allowing it to be scheduled on nodes with matching taints.
+What is the requirement that you need that the pod should be deployed on a particular node only?
+
+Use node affinity rules based on node labels.
+Tell me about image pull back error or crash loop back?
+
+Image pull back error: Issue fetching container image.
+Crash loop back: Continuous restarting of a container due to failure.
+Have you used secret?
+
+Yes, for securely storing sensitive information like passwords or API keys.
+Have you worked on volume in Kubernetes?
+
+Yes, for managing persistent storage in Kubernetes.
+Java application, change in ConfigMap, what to do for deployment to get that change?
+
+Update ConfigMap.
+Trigger a rolling deployment to apply changes to pods.
+What is rollout deployment?
+
+Gradual update of application instances without downtime.
+Rollout restart, pod not coming up with crash loop back error, what will you do?
+
+Analyze logs for the root cause.
+Correct the issue and redeploy.
+Requirement to connect to the cluster?
+
+Kubeconfig file and credentials.
+What does kubeconfig file contain?
+
+Cluster information, user details, and context.
+Difference between Deployment and ReplicaSet in Kubernetes?
+
+Deployment: Manages the deployment and scaling of a set of pods.
+ReplicaSet: Ensures a specified number of replicas of a pod are running.
+What is DaemonSet?
+
+Ensures a copy of a pod runs on each node in the cluster.
+Difference between NodePort and ClusterIP?
+
+NodePort: Exposes a service on each node's IP at a static port.
+ClusterIP: Exposes a service on a cluster-internal IP.
+Why use a service in Kubernetes?
+
+Exposes applications within the cluster or to the external world.
+Provides a stable endpoint for accessing the application.
+To go to a particular pod on a particular node, what would you do?
+
+Use node affinity or labels to schedule pods on specific nodes.
+Kubernetes architecture?
+
+Master nodes (API server, controller manager, scheduler).
+Worker nodes (Kubelet, container runtime).
+What is Service Account?
+
+Defines permissions for a pod to access resources.
+Deployment syntax and working of service type LoadBalancer?
+
+Deployment.yaml file defines the deployment.
+Service type LoadBalancer creates an external load balancer for the service.
+Difference between Job and Pod?
+
+Pod: Basic unit that runs one or more containers.
+Job: Manages the execution of one or more pods until a specified number of them successfully terminate.
+Difference between External IP and LoadBalancer IP in K8s?
+
+External IP: External-facing IP of a service.
+LoadBalancer IP: IP assigned to the load balancer.
+If you use service type LoadBalancer, what happens behind it?
+
+Cloud provider creates a load balancer and directs traffic to the service.
+Difference between ConfigMap and Secret?
+
+ConfigMap: For storing non-sensitive configuration data.
+Secret: For storing sensitive information like passwords or keys.
+Role of Load Balancer in Kubernetes?
+
+Distributes network traffic across multiple pods.
+Why use a namespace?
+
+Isolates resources, avoids naming conflicts, and improves cluster organization.
+How to run pods on a particular node?
+
+Use node affinity rules based on node labels.
+Troubleshooting pods down?
+
+Check logs, examine metrics, investigate possible resource issues, analyze events.
+Types of network services in Kubernetes?
+
+ClusterIP, NodePort, LoadBalancer, ExternalName.
+Accessing S3 from a pod?
+
+Use AWS SDK in the pod with proper IAM roles.
+Difference between DaemonSet and StatefulSet?
+
+DaemonSet: Ensures a pod runs on each node.
+StatefulSet: Ensures ordered deployment and unique hostnames for stateful applications.
+When to use DaemonSet and StatefulSet?
+
+Use DaemonSet for running a pod on each node.
+Use StatefulSet for stateful applications requiring unique hostnames.
+Editing ConfigMap or ServiceAccount during runtime, does it affect the application?
+
+Yes, it may require a restart of the related pods to apply changes.
+How to attach a pod to an S3 bucket?
+
+Use AWS SDK and appropriate IAM roles in the pod.
+Best way to secure pods in the network?
+
+Use Network Policies to control traffic between pods.
+Have you set up any Kubernetes cluster?
+
+Provide details of your experience in setting up and managing Kubernetes clusters.
+Deploying an application in K8s from scratch?
+
+Describe the process starting from creating Docker images, defining YAML files, and deploying.
+K8s architecture?
+
+Master nodes (control plane) and worker nodes.
+Purpose of Load Balancers in Kubernetes?
+
+Distribute traffic across multiple pods to ensure availability and reliability.
+Difference between Deployment and Service?
+
+Deployment: Manages the deployment and scaling of pods.
+Service: Provides a stable endpoint to access application pods.
+Configuring databases for many microservices in Kubernetes?
+
+Use separate database instances or schemas for each microservice.
+What is Ingress in Kubernetes?
+
+Manages external access to services with HTTP/S routing.
+Types of Load Balancers?
+
+External, Internal, and ClusterIP.
+Accessing S3 bucket from a Pod?
+
+Use AWS SDK with proper IAM roles and permissions.
+Difference between Kubelet and Kube Proxy?
+
+Kubelet: Node agent that ensures containers are running.
+Kube Proxy: Maintains network rules on nodes.
+Explain Kubernetes architecture?
+
+Master nodes (API server, controller manager, scheduler).
+Worker nodes (Kubelet, container runtime).
+Write deployment.yaml file?
+
+A sample deployment.yaml file includes metadata, spec, replicas, containers, etc.
+What is Ingress network?
+
+Ingress manages external access to services within a Kubernetes cluster.
+Kubernetes architecture?
+
+Master nodes (control plane) and worker nodes.
+Recent ticket solved in K8s?
+
+Describe a recent issue you resolved in Kubernetes, demonstrating your troubleshooting skills.
+PV and PVC?
+
+PV (Persistent Volume): Storage resource in the cluster.
+PVC (Persistent Volume Claim): Request for storage by a pod.
+Types of PV?
+
+Dynamic and Static.
+Creating ConfigMap and integration of Jenkins and K8s?
+
+Create ConfigMap with configuration data.
+Integrate Jenkins with Kubernetes using plugins or Kubernetes CLI.
+Difference between Job and Pod?
+
+Pod: Basic unit that runs one or more containers.
+Job: Manages the execution of one or more pods until a specified number of them successfully terminate.
+Deploying code from a developer to K8s, process?
+
+Use CI/CD tools like Jenkins.
+Define pipeline stages for building, testing, and deploying.
+Where to store secrets in K8s?
+
+Use Kubernetes Secrets.
+Why does a pod go to a pending state?
+
+Lack of resources, network issues, image pull failure.
+Request and limits in Kubernetes?
+
+Resource requests specify the amount of CPU and memory a container needs.
+Limits set the maximum amount of resources a container can use.
+Where can we store secrets in K8s?
+
+In Kubernetes Secrets.
+Role of Scheduler in Kubernetes?
+
+Assigns nodes to pods based on resource requirements and constraints.
+Components of K8s?
+
+API server, etcd, kubelet, kube-proxy, controller manager, scheduler.
+Ensuring pods don't connect to each other in a cluster?
+
+Use network policies within a namespace.
+Pod running on a different node with node-affinity error, how to fix?
+
+Add annotations and labels to address node-affinity issues.
+Errors faced in K8s?
+
+Image pull, crash pull, SSL errors, API version/resources errors, network errors.
+When does a pod go to a pending state?
+
+Lack of resources, network issues, image pull failures.
+Ingress controller used (NLB or ALB)?
+
+Depends on the cloud provider.
+What is Nginx Ingress controller?
+
+Manages external access to services within a Kubernetes cluster using Nginx.
+How to check a secret in a namespace?
+
+Use kubectl get secret in the specific namespace.
+Default namespaces?
+
+default, kube-system, and kube-public.
+Does Nginx Ingress controller support TCP?
+
+Yes, it supports TCP, not just HTTP/S.
+Type of applications worked on in Kubernetes?
+
+Describe the types of applications you've managed in Kubernetes.
+Purpose of CronJob in Kubernetes?
+
+Manages scheduled jobs at specified intervals.
+Service types in Kubernetes?
+
+ClusterIP, NodePort, LoadBalancer, ExternalName.
+Difference between blue-green deployment and rolling update?
+
+Blue-Green: Switches traffic between two identical environments.
+Rolling Update: Gradual update of application instances without downtime.
+Why use LoadBalancer service type?
+
+Exposes a service to external traffic, typically in cloud environments.
+Type of strategy followed in Kubernetes?
+
+Rolling update, blue-green deployment, canary deployment.
+Pod description?
+
+Provides detailed information about a pod, including metadata, containers, volumes, etc.
+What do taint and toleration mean?
+
+Taint: Property preventing pod scheduling on nodes.
+Toleration: Pod specification allowing it to be scheduled on nodes with matching taints.
+Worked with Helm charts?
+
+Yes or No. Describe experience if applicable.
+Following any standards for creating YAML files?
+
+Yes or No. Describe adherence to standards.
+Using volumes for K8S, AWS, or other?
+
+Describe the type of volumes used, e.g., EBS volumes in AWS.
+Where to store YAML files?
+
+In version control systems like Git.
+How to validate deployment?
+
+Check pod status, logs, and monitor metrics.
+How to login to EKS cluster?
+
+Use aws eks update-kubeconfig command.
+What is Kubernetes, and why is it used?
+
+Container orchestration platform for automating the deployment, scaling, and management of containerized applications.
+What are StatefulSets in K8S?
+
+Manages the deployment of stateful applications with ordered deployment and unique hostnames.
+What is RBAC in K8S?
+
+Role-Based Access Control for defining permissions and access levels.
+What is TLS Bootstrapping in K8S?
+
+Automatic provisioning of TLS certificates for securing communication.
+Deploying an app with internet at the initial stage, how to proceed as a lead cloud engineer?
+
+Define infrastructure requirements, security measures, and CI/CD pipelines for secure deployment.
 
 
 Helm
@@ -780,14 +989,14 @@ PYTHON
 7) write a python program to connect rds
 8) write a list program using list comprehension?
 9) Do you know any programming languages and any scripting languages?
-10)write a list program replace with "," by "-" using list functions?
+10) write a list program replace with "," by "-" using list functions?
 11) write the python program to find the missing number?
 12) Using python Arr=(0,0,1,0,1,1,0) all 0's should come to the left side and all 1's
 should come to the right side? can you write the syntax
 13) Write the python program to fetch the largest number from the list?
 14) Have you written any automation using shell script?
 15) In the shell script I want to run background?
-16)How do you read command line arguments in Shell scripting
+16) How do you read command line arguments in Shell scripting
 
 
 
@@ -796,24 +1005,24 @@ should come to the right side? can you write the syntax
 ============================================================================================
 
 
-1.tf state file and backup file. 
-2.Crash Loop backup
-3.how will you interact with java and pythan by jenkins. 
+1. tf state file and backup file. 
+2. Crash Loop backup
+3. how will you interact with java and pythan by jenkins. 
 4. What build tool you are using. 
-5.how will you take approval
-6.how will you take database backup by using shell scripting
-7.docker file
-8.nginx ingress controller. 
-9.integrating with cluster to monitoring tools
-10.ingress controler version. 
+5. how will you take approval
+6. how will you take database backup by using shell scripting
+7. docker file
+8. nginx ingress controller. 
+9. integrating with cluster to monitoring tools
+10. ingress controler version. 
 11. How will you give the logs for 20 applications. 
-12.how will you deploy nginx ingress controler. 
+12. how will you deploy nginx ingress controler. 
 13. We deployed multiple applications through terraform some one changed  some thing in console how can you trouble shoot and will you destroy?
-14.nategateway and nat instance
-15.what is headless service
-16.external name in k8s
-17.karpenter in k8s
-18.validate and muteupdate.
+14. nategateway and nat instance
+15. what is headless service
+16. external name in k8s
+17. karpenter in k8s
+18. validate and muteupdate.
 
 company standard chartered
 ========================== 
@@ -835,35 +1044,35 @@ company standard chartered
 ===============================
 1. AWS Lamda, SNS and SQS
 2. Dynamo DB
-3.end to end setup
-4.Disaster recovery
-5.Roles and responsibilities in monitoring tools
-6.Cycle errors in Terraform
-7.strings and variables in tf
-8.serverless services
-9.Elastic search
+3. end to end setup
+4. Disaster recovery
+5. Roles and responsibilities in monitoring tools
+6. Cycle errors in Terraform
+7. strings and variables in tf
+8. serverless services
+9. Elastic search
 
 ============================
-1.diff between scripted and declarative pipeline. 
-2.write docker file. 
-3.how to deploy an application in k8s. 
-4.how to create a user in docker
-5.service types in k8s
-6.deployment and statefulset   and demonset. 
-7.ngnix ingress controler
-8.service.yaml
-9.how you configure grafana and prometheus  in k8s
+1. diff between scripted and declarative pipeline. 
+2. write docker file. 
+3. how to deploy an application in k8s. 
+4. how to create a user in docker
+5. service types in k8s
+6. deployment and statefulset   and demonset. 
+7. ngnix ingress controler
+8. service.yaml
+9. how you configure grafana and prometheus  in k8s
 10. How will you check the logs in k8s. 
-11.CMD and Entrypoint. 
-12.Crash Loop backup error.
+11. CMD and Entrypoint. 
+12. Crash Loop backup error.
 
 ================================
-1.command to remove container. 
-2.How will you check the list of ports in linux. 
-3.what does echo $? 
-4.difference between bash and scripted pipeline. 
-5.How will you list the continers. 
-6.complete setup to getting docerfile and deployment.
+1. command to remove container. 
+2. How will you check the list of ports in linux. 
+3. what does echo $? 
+4. difference between bash and scripted pipeline. 
+5. How will you list the continers. 
+6. complete setup to getting docerfile and deployment. 
 
 
 1.what is abstraction,encapsulation,inheritance, polymorphism.
