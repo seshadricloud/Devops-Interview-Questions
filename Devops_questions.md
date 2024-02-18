@@ -1,6 +1,6 @@
---------------------------------------------------
+                                                                  --
  GIT
--------------------------------------------------
+                                                                  -
 
 1.What is GIT?
 
@@ -82,7 +82,7 @@ This process ensures that the conflicting changes are resolved and the branch is
 
 ====================================================
 Jenkins
-====================================================
+
 
 What is Jenkins?
 
@@ -202,9 +202,9 @@ Regularly review and update permissions as needed to ensure security and complia
 
 
 
-----------------------------------------------
+                                                       ------
 Ansible
-----------------------------------------------
+                                                       ------
 
 What is Ansible?
 
@@ -449,9 +449,9 @@ README.md: Documentation explaining the purpose and usage of the role.
 This directory structure organizes the role's components and makes it easy to reuse and share roles with others in Ansible.
 
 
-------------------------------
+                                 ------
  Dockers & Containers
-------------------------------
+                                 ------
 
 What is Docker?
 Docker is a platform for developing, shipping, and running applications in containers. Containers are lightweight, portable, and self-sufficient units that encapsulate an application and its dependencies, ensuring consistent behavior across different environments.
@@ -621,9 +621,9 @@ Give me a command to remove all exited containers?
 You can remove all exited containers using the following command:
 docker rm $(docker ps -q -f status=exited)
 
---------------------------------------
+                                            ------
 kuberntes
-----------------------------------------
+                                                       
 
 What is Openshift?
 OpenShift is a container orchestration platform developed by Red Hat. It provides a comprehensive platform for building, deploying, and managing containerized applications and services. OpenShift is based on Kubernetes and adds additional features for enterprise use cases, including developer and operational tools.
@@ -772,9 +772,9 @@ How to manually migrate a container?
 Manually migrating a container usually involves stopping the container on the source system, exporting its data, copying it to the destination system, and then importing and starting it again. The exact steps depend on the container runtime being used (e.g., Docker).
 
 
---------------------------------------
+                                            ------
 aws
---------------------------------------
+                                            ------
 
 What is Amazon RDS?
 Amazon RDS (Relational Database Service) is a managed database service provided by AWS. It makes it easy to set up, operate, and scale relational databases like MySQL, PostgreSQL, Oracle, SQL Server, and MariaDB in the cloud. RDS handles routine database tasks such as provisioning, patching, backup, recovery, and scaling, allowing users to focus on their application development rather than database management.
@@ -921,9 +921,9 @@ To connect a private subnet with a public subnet in a VPC, you can set up a netw
 Can VPC peering be possible in two different regions?
 No, VPC peering is not possible between VPCs located in different AWS regions. VPC peering is limited to VPCs within the same AWS region. If you need to connect VPCs in different regions, you can use other methods such as VPN connections or Direct Connect.
 
---------------------------------------------------
+                                                                  --
 ci/cd
---------------------------------------------------
+                                                                  --
 
 What is CI & CD?
 CI (Continuous Integration): CI is a software development practice in which code changes are automatically built, tested, and integrated into the shared codebase frequently. It ensures that code changes do not introduce integration issues, and it promotes collaboration among developers.
@@ -1011,9 +1011,9 @@ IBM Cloud
 These tools and technologies enable DevOps teams to automate tasks, improve collaboration, and accelerate the development and delivery of software products. The specific tools used may vary depending on the organization's needs and preferences.
 
 
--------------------------
+                                 -
 linux
--------------------------
+                                 -
 
 
 
