@@ -599,7 +599,7 @@ KUBERNETES
 2) Diff between pod and node?
 • A Node is a physical or virtual machine in a cluster•
  A Pod is the smallest deployable unit in Kubernetes, representing one or more 
-containers)
+containers
 3) What is the purpose of the Ingress Controller?
 • Manages external access to services)
 • Routes external HTTP/S traffic to services based on Ingress resource rules)
