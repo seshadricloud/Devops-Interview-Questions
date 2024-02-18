@@ -592,325 +592,249 @@ ECS
 
 KUBERNETES
 ====================
-One container goes down, what's your immediate reaction?
+1. One container goes down, what's your immediate reaction?
+• Check container logs.
+• Examine system and application metrics.
+• Restart the container if it's a transient issue.
+2. Diff between pod and node?
+• A Node is a physical or virtual machine in a cluster.
+• A Pod is the smallest deployable unit in Kubernetes, representing one or more 
+containers.
+3. What is the purpose of the Ingress Controller?
+• Manages external access to services.
+• Routes external HTTP/S traffic to services based on Ingress resource rules.
+4. Diff between taint & toleration?
+• Taint: Property preventing pod scheduling on nodes.
+• Toleration: Pod specification allowing it to be scheduled on nodes with matching 
+taints.
+5. How to create a user in a service?
+• Depends on the service. Generally involves using registration forms, command-line 
+tools, or IAM for cloud services.
+6. Difference between Deployment and STS?
+• Deployment: For stateless applications.
+• StatefulSet: For stateful applications with ordered deployment and unique 
+hostnames.
+7. What is an Ingress Controller?
+• Manages external access to services in Kubernetes.
+• Acts as a reverse proxy for routing external HTTP/S traffic to services.
+8. Have you worked on production support?
+• Share experiences supporting applications in a production environment, resolving 
+issues, and ensuring system reliability.
+9. Trouble in production environment you did?
+• Provide an example of a production issue you resolved, demonstrating your 
+troubleshooting skills.
+10. What is taint and toleration?
+• Taint: Property preventing pod scheduling on nodes.
+• Toleration: Pod specification allowing it to be scheduled on nodes with matching 
+taints.
+11. What is the requirement that you need that the pod should be deployed on a particular 
+node only?
+• Use node affinity rules based on node labels.
+12. Tell me about image pull back error or crash loop back?
+• Image pull back error: Issue fetching container image.
+• Crash loop back: Continuous restarting of a container due to failure.
+13. Have you used secret?
+• Yes, for securely storing sensitive information like passwords or API keys.
+14. Have you worked on volume in Kubernetes?
+• Yes, for managing persistent storage in Kubernetes.
+15. Java application, change in ConfigMap, what to do for deployment to get that change?
+• Update ConfigMap.
+• Trigger a rolling deployment to apply changes to pods.
+16. What is rollout deployment?
+• Gradual update of application instances without downtime.
+17. Rollout restart, pod not coming up with crash loop back error, what will you do?
+• Analyze logs for the root cause.
+• Correct the issue and redeploy.
+18. Requirement to connect to the cluster?
+• Kubeconfig file and credentials.
+19. What does kubeconfig file contain?
+• Cluster information, user details, and context.
+20. Difference between Deployment and ReplicaSet in Kubernetes?
+• Deployment: Manages the deployment and scaling of a set of pods.
+• ReplicaSet: Ensures a specified number of replicas of a pod are running.
+21. What is DaemonSet?
+• Ensures a copy of a pod runs on each node in the cluster.
+22. Difference between NodePort and ClusterIP?
+• NodePort: Exposes a service on each node's IP at a static port.
+• ClusterIP: Exposes a service on a cluster-internal IP.
+23. Why use a service in Kubernetes?
+• Exposes applications within the cluster or to the external world.
+• Provides a stable endpoint for accessing the application.
+24. To go to a particular pod on a particular node, what would you do?
+• Use node affinity or labels to schedule pods on specific nodes.
+25. Kubernetes architecture?
+• Master nodes (API server, controller manager, scheduler).
+• Worker nodes (Kubelet, container runtime).
+26. What is Service Account?
+• Defines permissions for a pod to access resources.
+27. Deployment syntax and working of service type LoadBalancer?
+• Deployment.yaml file defines the deployment.
+• Service type LoadBalancer creates an external load balancer for the service.
+28. Difference between Job and Pod?
+• Pod: Basic unit that runs one or more containers.
+• Job: Manages the execution of one or more pods until a specified number of them 
+successfully terminate.
+29. Difference between External IP and LoadBalancer IP in K8s?
+• External IP: External-facing IP of a service.
+• LoadBalancer IP: IP assigned to the load balancer.
+30. If you use service type LoadBalancer, what happens behind it?
+• Cloud provider creates a load balancer and directs traffic to the service.
+31. Difference between ConfigMap and Secret?
+• ConfigMap: For storing non-sensitive configuration data.
+• Secret: For storing sensitive information like passwords or keys.
+32. Role of Load Balancer in Kubernetes?
+• Distributes network traffic across multiple pods.
+33. Why use a namespace?
+• Isolates resources, avoids naming conflicts, and improves cluster organization.
+34. How to run pods on a particular node?
+• Use node affinity rules based on node labels.
+35. Troubleshooting pods down?
+• Check logs, examine metrics, investigate possible resource issues, analyze events.
+36. Types of network services in Kubernetes?
+• ClusterIP, NodePort, LoadBalancer, ExternalName.
+37. Accessing S3 from a pod?
+• Use AWS SDK in the pod with proper IAM roles.
+38. Difference between DaemonSet and StatefulSet?
+• DaemonSet: Ensures a pod runs on each node.
+• StatefulSet: Ensures ordered deployment and unique hostnames for stateful 
+applications.
+39. When to use DaemonSet and StatefulSet?
+• Use DaemonSet for running a pod on each node.
+• Use StatefulSet for stateful applications requiring unique hostnames.
+40. Editing ConfigMap or ServiceAccount during runtime, does it affect the application?
+• Yes, it may require a restart of the related pods to apply changes.
+41. How to attach a pod to an S3 bucket?
+• Use AWS SDK and appropriate IAM roles in the pod.
+42. Best way to secure pods in the network?
+• Use Network Policies to control traffic between pods.
+43. Have you set up any Kubernetes cluster?
+• Provide details of your experience in setting up and managing Kubernetes clusters.
+44. Deploying an application in K8s from scratch?
+• Describe the process starting from creating Docker images, defining YAML files, and 
+deploying.
+45. K8s architecture?
+• Master nodes (control plane) and worker nodes.
+46. Purpose of Load Balancers in Kubernetes?
+• Distribute traffic across multiple pods to ensure availability and reliability.
+47. Difference between Deployment and Service?
+• Deployment: Manages the deployment and scaling of pods.
+• Service: Provides a stable endpoint to access application pods.
+48. Configuring databases for many microservices in Kubernetes?
+• Use separate database instances or schemas for each microservice.
+49. What is Ingress in Kubernetes?
+• Manages external access to services with HTTP/S routing.
+50. Types of Load Balancers?
+• External, Internal, and ClusterIP.
+51. Accessing S3 bucket from a Pod?
+• Use AWS SDK with proper IAM roles and permissions.
+52. Difference between Kubelet and Kube Proxy?
+• Kubelet: Node agent that ensures containers are running.
+• Kube Proxy: Maintains network rules on nodes.
+53. Explain Kubernetes architecture?
+• Master nodes (API server, controller manager, scheduler).
+• Worker nodes (Kubelet, container runtime).
+54. Write deployment.yaml file?
+• A sample deployment.yaml file includes metadata, spec, replicas, containers, etc.
+55. What is Ingress network?
+• Ingress manages external access to services within a Kubernetes cluster.
+56. Kubernetes architecture?
+• Master nodes (control plane) and worker nodes.
+57. Recent ticket solved in K8s?
+• Describe a recent issue you resolved in Kubernetes, demonstrating your 
+troubleshooting skills.
+58. PV and PVC?
+• PV (Persistent Volume): Storage resource in the cluster.
+• PVC (Persistent Volume Claim): Request for storage by a pod.
+59. Types of PV?
+• Dynamic and Static.
+60. Creating ConfigMap and integration of Jenkins and K8s?
+• Create ConfigMap with configuration data.
+• Integrate Jenkins with Kubernetes using plugins or Kubernetes CLI.
+61. Difference between Job and Pod?
+• Pod: Basic unit that runs one or more containers.
+• Job: Manages the execution of one or more pods until a specified number of them 
+successfully terminate.
+62. Deploying code from a developer to K8s, process?
+• Use CI/CD tools like Jenkins.
+• Define pipeline stages for building, testing, and deploying.
+63. Where to store secrets in K8s?
+• Use Kubernetes Secrets.
+64. Why does a pod go to a pending state?
+• Lack of resources, network issues, image pull failure.
+65. Request and limits in Kubernetes?
+• Resource requests specify the amount of CPU and memory a container needs.
+• Limits set the maximum amount of resources a container can use.
+66. Where can we store secrets in K8s?
+• In Kubernetes Secrets.
+67. Role of Scheduler in Kubernetes?
+• Assigns nodes to pods based on resource requirements and constraints.
+68. Components of K8s?
+• API server, etcd, kubelet, kube-proxy, controller manager, scheduler.
+69. Ensuring pods don't connect to each other in a cluster?
+• Use network policies within a namespace.
+70. Pod running on a different node with node-affinity error, how to fix?
+• Add annotations and labels to address node-affinity issues.
+71. Errors faced in K8s?
+• Image pull, crash pull, SSL errors, API version/resources errors, network errors.
+72. When does a pod go to a pending state?
+• Lack of resources, network issues, image pull failures.
+73. Ingress controller used (NLB or ALB)?
+• Depends on the cloud provider.
+74. What is Nginx Ingress controller?
+• Manages external access to services within a Kubernetes cluster using Nginx.
+75. How to check a secret in a namespace?
+• Use kubectl get secret in the specific namespace.
+76. Default namespaces?
+• default, kube-system, and kube-public.
+77. Does Nginx Ingress controller support TCP?
+• Yes, it supports TCP, not just HTTP/S.
+78. Type of applications worked on in Kubernetes?
+• Describe the types of applications you've managed in Kubernetes.
+79. Purpose of CronJob in Kubernetes?
+• Manages scheduled jobs at specified intervals.
+80. Service types in Kubernetes?
+• ClusterIP, NodePort, LoadBalancer, ExternalName.
+81. Difference between blue-green deployment and rolling update?
+• Blue-Green: Switches traffic between two identical environments.
+• Rolling Update: Gradual update of application instances without downtime.
+82. Why use LoadBalancer service type?
+• Exposes a service to external traffic, typically in cloud environments.
+83. Type of strategy followed in Kubernetes?
+• Rolling update, blue-green deployment, canary deployment.
+84. Pod description?
+• Provides detailed information about a pod, including metadata, containers, volumes, 
+etc.
+85. What do taint and toleration mean?
+• Taint: Property preventing pod scheduling on nodes.
+• Toleration: Pod specification allowing it to be scheduled on nodes with matching 
+taints.
+86. Worked with Helm charts?
+• Yes or No. Describe experience if applicable.
+87. Following any standards for creating YAML files?
+• Yes or No. Describe adherence to standards.
+88. Using volumes for K8S, AWS, or other?
+• Describe the type of volumes used, e.g., EBS volumes in AWS.
+89. Where to store YAML files?
+• In version control systems like Git.
+90. How to validate deployment?
+• Check pod status, logs, and monitor metrics.
+91. How to login to EKS cluster?
+• Use aws eks update-kubeconfig command.
+92. What is Kubernetes, and why is it used?
+• Container orchestration platform for automating the deployment, scaling, and 
+management of containerized applications.
+93. What are StatefulSets in K8S?
+• Manages the deployment of stateful applications with ordered deployment and 
+unique hostnames.
+94. What is RBAC in K8S?
+• Role-Based Access Control for defining permissions and access levels.
+95. What is TLS Bootstrapping in K8S?
+• Automatic provisioning of TLS certificates for securing communication.
+96. Deploying an app with internet at the initial stage, how to proceed as a lead cloud 
+engineer?
+• Define infrastructure requirements, security measures, and CI/CD pipelines for 
+secure deployment.
 
-Check container logs.
-Examine system and application metrics.
-Restart the container if it's a transient issue.
-Diff between pod and node?
-
-A Node is a physical or virtual machine in a cluster.
-A Pod is the smallest deployable unit in Kubernetes, representing one or more containers.
-What is the purpose of the Ingress Controller?
-
-Manages external access to services.
-Routes external HTTP/S traffic to services based on Ingress resource rules.
-Diff between taint & toleration?
-
-Taint: Property preventing pod scheduling on nodes.
-Toleration: Pod specification allowing it to be scheduled on nodes with matching taints.
-How to create a user in a service?
-
-Depends on the service. Generally involves using registration forms, command-line tools, or IAM for cloud services.
-Difference between Deployment and STS?
-
-Deployment: For stateless applications.
-StatefulSet: For stateful applications with ordered deployment and unique hostnames.
-What is an Ingress Controller?
-
-Manages external access to services in Kubernetes.
-Acts as a reverse proxy for routing external HTTP/S traffic to services.
-Have you worked on production support?
-
-Share experiences supporting applications in a production environment, resolving issues, and ensuring system reliability.
-Trouble in production environment you did?
-
-Provide an example of a production issue you resolved, demonstrating your troubleshooting skills.
-What is taint and toleration?
-
-Taint: Property preventing pod scheduling on nodes.
-Toleration: Pod specification allowing it to be scheduled on nodes with matching taints.
-What is the requirement that you need that the pod should be deployed on a particular node only?
-
-Use node affinity rules based on node labels.
-Tell me about image pull back error or crash loop back?
-
-Image pull back error: Issue fetching container image.
-Crash loop back: Continuous restarting of a container due to failure.
-Have you used secret?
-
-Yes, for securely storing sensitive information like passwords or API keys.
-Have you worked on volume in Kubernetes?
-
-Yes, for managing persistent storage in Kubernetes.
-Java application, change in ConfigMap, what to do for deployment to get that change?
-
-Update ConfigMap.
-Trigger a rolling deployment to apply changes to pods.
-What is rollout deployment?
-
-Gradual update of application instances without downtime.
-Rollout restart, pod not coming up with crash loop back error, what will you do?
-
-Analyze logs for the root cause.
-Correct the issue and redeploy.
-Requirement to connect to the cluster?
-
-Kubeconfig file and credentials.
-What does kubeconfig file contain?
-
-Cluster information, user details, and context.
-Difference between Deployment and ReplicaSet in Kubernetes?
-
-Deployment: Manages the deployment and scaling of a set of pods.
-ReplicaSet: Ensures a specified number of replicas of a pod are running.
-What is DaemonSet?
-
-Ensures a copy of a pod runs on each node in the cluster.
-Difference between NodePort and ClusterIP?
-
-NodePort: Exposes a service on each node's IP at a static port.
-ClusterIP: Exposes a service on a cluster-internal IP.
-Why use a service in Kubernetes?
-
-Exposes applications within the cluster or to the external world.
-Provides a stable endpoint for accessing the application.
-To go to a particular pod on a particular node, what would you do?
-
-Use node affinity or labels to schedule pods on specific nodes.
-Kubernetes architecture?
-
-Master nodes (API server, controller manager, scheduler).
-Worker nodes (Kubelet, container runtime).
-What is Service Account?
-
-Defines permissions for a pod to access resources.
-Deployment syntax and working of service type LoadBalancer?
-
-Deployment.yaml file defines the deployment.
-Service type LoadBalancer creates an external load balancer for the service.
-Difference between Job and Pod?
-
-Pod: Basic unit that runs one or more containers.
-Job: Manages the execution of one or more pods until a specified number of them successfully terminate.
-Difference between External IP and LoadBalancer IP in K8s?
-
-External IP: External-facing IP of a service.
-LoadBalancer IP: IP assigned to the load balancer.
-If you use service type LoadBalancer, what happens behind it?
-
-Cloud provider creates a load balancer and directs traffic to the service.
-Difference between ConfigMap and Secret?
-
-ConfigMap: For storing non-sensitive configuration data.
-Secret: For storing sensitive information like passwords or keys.
-Role of Load Balancer in Kubernetes?
-
-Distributes network traffic across multiple pods.
-Why use a namespace?
-
-Isolates resources, avoids naming conflicts, and improves cluster organization.
-How to run pods on a particular node?
-
-Use node affinity rules based on node labels.
-Troubleshooting pods down?
-
-Check logs, examine metrics, investigate possible resource issues, analyze events.
-Types of network services in Kubernetes?
-
-ClusterIP, NodePort, LoadBalancer, ExternalName.
-Accessing S3 from a pod?
-
-Use AWS SDK in the pod with proper IAM roles.
-Difference between DaemonSet and StatefulSet?
-
-DaemonSet: Ensures a pod runs on each node.
-StatefulSet: Ensures ordered deployment and unique hostnames for stateful applications.
-When to use DaemonSet and StatefulSet?
-
-Use DaemonSet for running a pod on each node.
-Use StatefulSet for stateful applications requiring unique hostnames.
-Editing ConfigMap or ServiceAccount during runtime, does it affect the application?
-
-Yes, it may require a restart of the related pods to apply changes.
-How to attach a pod to an S3 bucket?
-
-Use AWS SDK and appropriate IAM roles in the pod.
-Best way to secure pods in the network?
-
-Use Network Policies to control traffic between pods.
-Have you set up any Kubernetes cluster?
-
-Provide details of your experience in setting up and managing Kubernetes clusters.
-Deploying an application in K8s from scratch?
-
-Describe the process starting from creating Docker images, defining YAML files, and deploying.
-K8s architecture?
-
-Master nodes (control plane) and worker nodes.
-Purpose of Load Balancers in Kubernetes?
-
-Distribute traffic across multiple pods to ensure availability and reliability.
-Difference between Deployment and Service?
-
-Deployment: Manages the deployment and scaling of pods.
-Service: Provides a stable endpoint to access application pods.
-Configuring databases for many microservices in Kubernetes?
-
-Use separate database instances or schemas for each microservice.
-What is Ingress in Kubernetes?
-
-Manages external access to services with HTTP/S routing.
-Types of Load Balancers?
-
-External, Internal, and ClusterIP.
-Accessing S3 bucket from a Pod?
-
-Use AWS SDK with proper IAM roles and permissions.
-Difference between Kubelet and Kube Proxy?
-
-Kubelet: Node agent that ensures containers are running.
-Kube Proxy: Maintains network rules on nodes.
-Explain Kubernetes architecture?
-
-Master nodes (API server, controller manager, scheduler).
-Worker nodes (Kubelet, container runtime).
-Write deployment.yaml file?
-
-A sample deployment.yaml file includes metadata, spec, replicas, containers, etc.
-What is Ingress network?
-
-Ingress manages external access to services within a Kubernetes cluster.
-Kubernetes architecture?
-
-Master nodes (control plane) and worker nodes.
-Recent ticket solved in K8s?
-
-Describe a recent issue you resolved in Kubernetes, demonstrating your troubleshooting skills.
-PV and PVC?
-
-PV (Persistent Volume): Storage resource in the cluster.
-PVC (Persistent Volume Claim): Request for storage by a pod.
-Types of PV?
-
-Dynamic and Static.
-Creating ConfigMap and integration of Jenkins and K8s?
-
-Create ConfigMap with configuration data.
-Integrate Jenkins with Kubernetes using plugins or Kubernetes CLI.
-Difference between Job and Pod?
-
-Pod: Basic unit that runs one or more containers.
-Job: Manages the execution of one or more pods until a specified number of them successfully terminate.
-Deploying code from a developer to K8s, process?
-
-Use CI/CD tools like Jenkins.
-Define pipeline stages for building, testing, and deploying.
-Where to store secrets in K8s?
-
-Use Kubernetes Secrets.
-Why does a pod go to a pending state?
-
-Lack of resources, network issues, image pull failure.
-Request and limits in Kubernetes?
-
-Resource requests specify the amount of CPU and memory a container needs.
-Limits set the maximum amount of resources a container can use.
-Where can we store secrets in K8s?
-
-In Kubernetes Secrets.
-Role of Scheduler in Kubernetes?
-
-Assigns nodes to pods based on resource requirements and constraints.
-Components of K8s?
-
-API server, etcd, kubelet, kube-proxy, controller manager, scheduler.
-Ensuring pods don't connect to each other in a cluster?
-
-Use network policies within a namespace.
-Pod running on a different node with node-affinity error, how to fix?
-
-Add annotations and labels to address node-affinity issues.
-Errors faced in K8s?
-
-Image pull, crash pull, SSL errors, API version/resources errors, network errors.
-When does a pod go to a pending state?
-
-Lack of resources, network issues, image pull failures.
-Ingress controller used (NLB or ALB)?
-
-Depends on the cloud provider.
-What is Nginx Ingress controller?
-
-Manages external access to services within a Kubernetes cluster using Nginx.
-How to check a secret in a namespace?
-
-Use kubectl get secret in the specific namespace.
-Default namespaces?
-
-default, kube-system, and kube-public.
-Does Nginx Ingress controller support TCP?
-
-Yes, it supports TCP, not just HTTP/S.
-Type of applications worked on in Kubernetes?
-
-Describe the types of applications you've managed in Kubernetes.
-Purpose of CronJob in Kubernetes?
-
-Manages scheduled jobs at specified intervals.
-Service types in Kubernetes?
-
-ClusterIP, NodePort, LoadBalancer, ExternalName.
-Difference between blue-green deployment and rolling update?
-
-Blue-Green: Switches traffic between two identical environments.
-Rolling Update: Gradual update of application instances without downtime.
-Why use LoadBalancer service type?
-
-Exposes a service to external traffic, typically in cloud environments.
-Type of strategy followed in Kubernetes?
-
-Rolling update, blue-green deployment, canary deployment.
-Pod description?
-
-Provides detailed information about a pod, including metadata, containers, volumes, etc.
-What do taint and toleration mean?
-
-Taint: Property preventing pod scheduling on nodes.
-Toleration: Pod specification allowing it to be scheduled on nodes with matching taints.
-Worked with Helm charts?
-
-Yes or No. Describe experience if applicable.
-Following any standards for creating YAML files?
-
-Yes or No. Describe adherence to standards.
-Using volumes for K8S, AWS, or other?
-
-Describe the type of volumes used, e.g., EBS volumes in AWS.
-Where to store YAML files?
-
-In version control systems like Git.
-How to validate deployment?
-
-Check pod status, logs, and monitor metrics.
-How to login to EKS cluster?
-
-Use aws eks update-kubeconfig command.
-What is Kubernetes, and why is it used?
-
-Container orchestration platform for automating the deployment, scaling, and management of containerized applications.
-What are StatefulSets in K8S?
-
-Manages the deployment of stateful applications with ordered deployment and unique hostnames.
-What is RBAC in K8S?
-
-Role-Based Access Control for defining permissions and access levels.
-What is TLS Bootstrapping in K8S?
-
-Automatic provisioning of TLS certificates for securing communication.
-Deploying an app with internet at the initial stage, how to proceed as a lead cloud engineer?
-
-Define infrastructure requirements, security measures, and CI/CD pipelines for secure deployment.
 
 
 Helm
